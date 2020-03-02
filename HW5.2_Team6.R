@@ -13,7 +13,7 @@
 
 # Reading the C.50 package
 library(C50)
-
+library(RWeka)
 # Construct Features
 home_owner <- c("Yes","No","No","Yes","No",
                 "No","Yes","No","No","No","No")
