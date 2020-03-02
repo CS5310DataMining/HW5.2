@@ -47,3 +47,14 @@ summary(loan_model)
 #-------------------------------------------
 predict_test <- predict(loan_model, te_loan_table)
 predict_test
+
+#========================
+#Ripper
+
+loan_table_JR <- JRip(default_borrow ~ ., data = tr_loan_table)
+loan_table_JR
+
+#OneR
+
+loan_table_1R <- OneR(default_borrow ~ ., data = tr_loan_table)
+loan_table_1R
